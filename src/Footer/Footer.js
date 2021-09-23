@@ -1,4 +1,8 @@
 import React from "react";
+import facebook from "../images/facebook.svg";
+import linkedin from "../images/linkedin.svg";
+import pinterest from "../images/pinterest.svg";
+import email from "../images/email.svg";
 
 function Footer() {
     return (
@@ -9,25 +13,25 @@ function Footer() {
                         <div className="media-links">
                             <div className="col-sm-1 col-md-1 col-sm-offset-4 col-md-offset-4">
                                 <div className="facebook">
-                                    <a href="#"><img className="img-responsive" src="./images/facebook.svg" /></a>
+                                    <a href="#"><img className="img-responsive" src={facebook} alt="facebook"/></a>
                                 </div>
                             </div>
 
                             <div className="col-sm-1 col-md-1">
                                 <div className="linkedin">
-                                    <a href="#"><img className="img-responsive" src="./images/linkedin.svg" /></a>
+                                    <a href="#"><img className="img-responsive" src={linkedin} alt="linkedin"/></a>
                                 </div>
                             </div>
 
                             <div className="col-sm-1 col-md-1">
                                 <div className="pinterest">
-                                    <a href="#"><img className="img-responsive" src="./images/pinterest.svg" /></a>
+                                    <a href="#"><img className="img-responsive" src={pinterest} alt="pinterest"/></a>
                                 </div>
                             </div>
 
                             <div className="col-sm-1 col-md-1">
                                 <div className="email-icon">
-                                    <a href="#"><img className="img-responsive" src="./images/email.svg" /></a>
+                                    <a href="#"><img className="img-responsive" src={email} alt="email" /></a>
                                 </div>
                             </div>
                         </div>

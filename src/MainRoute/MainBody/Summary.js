@@ -1,4 +1,8 @@
 import React from "react";
+import developerdesign from "../../images/developerdesign.svg";
+import responsedesign from "../../images/responsivedesign.svg";
+import innovativesolution from "../../images/innovativesolutions.svg";
+import passion from "../../images/passion.svg";
 
 function Summary() {
     return (
@@ -9,7 +13,7 @@ function Summary() {
                         <div className="development-summary">
                             <div className="col-sm-1 col-md-1">
                                 <div className="development-img">
-                                    <img className="img-responsive" src="./images/developerdesign.svg" />
+                                    <img className="img-responsive" src={developerdesign} alt="developer design"/>
                                 </div>
                             </div>
 
@@ -24,7 +28,7 @@ function Summary() {
                         <div className="responsive-summary">
                             <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
                                 <div className="responsive-img">
-                                    <img className="img-responsive" src="./images/responsivedesign.svg" />
+                                    <img className="img-responsive" src={responsedesign} alt="response design" />
                                 </div>
                             </div>
 
@@ -41,7 +45,7 @@ function Summary() {
                         <div className="ideas-summary">
                             <div className="col-sm-1 col-md-1">
                                 <div className="idea-img">
-                                    <img className="img-responsive" src="./images/innovativesolutions.svg" />
+                                    <img className="img-responsive" src={innovativesolution} alt="innovative solution" />
                                 </div>
                             </div>
 
@@ -55,7 +59,7 @@ function Summary() {
 
                         <div className="passion-summary">
                             <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
-                                <img className="img-responsive" src="./images/passion.svg" />
+                                <img className="img-responsive" src={passion} alt="passion"/>
                             </div>
 
                             <div className="col-sm-4 col-md-4">

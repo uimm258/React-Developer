@@ -2,6 +2,28 @@ html {
   scroll-behavior: smooth;
 }
 
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.costume-navbar {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+nav {
+  position: absolute !important;
+  z-index: 20;
+  height: 70px;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  width: 100%;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 12pt;
+}
+
 /* Navigation */
 .navigation {
   position: absolute;
@@ -47,19 +69,57 @@ html {
   background-attachment: fixed;
   padding: 14.7% 0; /* Center contents within the container, make background image cover*/
   color: white;
-}
 
+  top: 0;
+  width: 100%;
+}
+.costume-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn__row-wrapper {
+  flex-direction: row !important;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.costume-link {
+  color: white;
+  font-family: "Roboto", Helvetica, serif;
+  font-size: 14pt;
+  font-weight: 600;
+  border-radius: 0;
+  border: 2px solid white;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  width: max-content;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.costume-link:hover {
+  border: 2px solid white;
+  background-color: white;
+}
 .entry-banner h1 {
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 #hello {
   font-size: 28pt;
+  color: white;
 }
 #name {
   font-size: 100pt;
+  color: white;
 }
 #person-description {
   font-size: 33pt;
+  color: white;
 }
 .banner-buttons .btn-border,
 .submit-contact .btn-border,
@@ -78,7 +138,15 @@ html {
   -ms-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-
+.projects * {
+  color: white;
+}
+.projects {
+  padding-top: 100px !important;
+}
+.contact {
+  padding-top: 100px !important;
+}
 .banner-buttons .btn-border:hover,
 .submit-contact .btn-border:hover,
 .projects .btn-border:hover {
@@ -87,6 +155,49 @@ html {
 }
 
 /* About Me */
+.costume-btn-dark {
+  color: #333;
+  border: 2px solid #333;
+}
+.costume-btn-dark:hover {
+  border: 2px solid #333;
+  background-color: #333;
+  color: white;
+}
+.dev-summary__wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(./images/architecture-2178604_1920-main1.jpg);
+  background-attachment: fixed;
+  background-attachment: center center;
+  width: 100%;
+  padding: 50px 0px;
+  margin: 0 auto;
+}
+.dev-summary {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.dev-summary__item {
+  width: auto;
+  display: flex;
+  width: 500px;
+  margin: 20px;
+}
+.dev-icons-wrapper {
+  padding: 10px;
+  margin-right: 30px;
+}
+.dev-icons {
+  width: 60px;
+}
+.dev-summary__item > * > * {
+  color: white !important;
+}
 .about {
   padding: 3% 0;
   background: linear-gradient(
@@ -207,20 +318,55 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/luvtalklogo.png);
   background-position: center center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
+.luvtalk-project > h3 {
+  color: white;
+}
 .personal-website-project {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/logo.svg);
   background-position: center center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
+.personal-website-project > h3 {
+  color: white;
+}
 .strike-zone-project {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/mlbproject.png);
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: 20px;
 }
-
+.strike-zone-project > h3 {
+  color: white;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+#moreprojects {
+  width: max-content;
+}
+#moreprojects:hover {
+  color: #333 !important;
+}
 .resume {
   padding: 50px 0px;
   font-family: "Calisto MT", Helvetica, serif;
@@ -242,6 +388,12 @@ html {
   background-color: #3a3a3a;
   padding: 50px 150px;
   color: white;
+}
+.contact * {
+  color: white;
+}
+.submit-contact > a:hover {
+  color: black;
 }
 .contact input,
 textarea {
@@ -288,16 +440,30 @@ textarea {
   padding: 50px 0;
   font-family: "Roboto", Helvetica, serif;
 }
-
+.footer * {
+  color: white;
+}
+.costume-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 .footer h3,
 .footer h4 {
   font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.social-icons {
+  width: 50px;
+  margin-left: 10px;
 }
 .facebook,
 .linkedin,
 .pinterest,
 .email-icon {
-  padding: 31%;
+  width: 50px;
+  margin-left: 40px;
 }
 .footer img {
   background-color: #8a8a8a;
@@ -333,4 +499,22 @@ textarea {
 .portfolio-footer a:hover,
 .resume-footer a:hover,
 .contact-footer a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    padding: 40px 10px;
+  }
+  nav {
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  nav {
+    height: 90px;
+  }
+  .contact {
+    padding: 40px 10px;
+  }
 }

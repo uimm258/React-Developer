@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Main() {
     return(
@@ -20,7 +21,7 @@ function Main() {
                             </div>
 
                             <div className="col-sm-1 col-md-1">
-                                <a className="btn btn-default btn-border" href="#projects">Portfolio</a>
+                                <Link className="btn btn-default btn-border" to="/portfolio">Portfolio</Link>
                             </div>
                         </div>
                     </div>

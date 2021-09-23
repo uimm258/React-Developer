@@ -1,9 +1,9 @@
 import React from "react";
-import Main from  "./Main"
-import About from "./About";
-import Summary from "./Summary";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Main from  "./MainBody/Main"
+import About from "./MainBody/About";
+import Summary from "./MainBody/Summary";
+import Projects from "./MainBody/Projects";
+import Contact from "./MainBody/Contact";
 
 function MainBody() {
     return (
